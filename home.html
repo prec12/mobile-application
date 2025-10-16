@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Tracker - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white text-center py-4 text-xl font-semibold">
+    Financial Tracker
+  </header>
+
+  <!-- Balance Section -->
+  <section class="text-center mt-6">
+    <h2 class="text-gray-700 text-lg font-medium">Total Balance</h2>
+    <p class="text-3xl font-bold text-green-600 mt-1">$2,450.00</p>
+  </section>
+
+  <!-- Summary Cards -->
+  <section class="flex justify-center gap-4 mt-6 px-4">
+    <div class="bg-white shadow-md p-4 rounded-lg w-1/2 text-center">
+      <h3 class="text-gray-500 text-sm">Income</h3>
+      <p class="text-green-600 font-bold">$3,000</p>
+    </div>
+    <div class="bg-white shadow-md p-4 rounded-lg w-1/2 text-center">
+      <h3 class="text-gray-500 text-sm">Expenses</h3>
+      <p class="text-red-600 font-bold">$550</p>
+    </div>
+  </section>
+
+  <!-- Recent Transactions -->
+  <section class="px-4 mt-8">
+    <h3 class="text-gray-700 font-semibold mb-2">Recent Transactions</h3>
+    <ul class="space-y-3">
+      <li class="bg-white p-3 rounded-lg shadow-sm flex justify-between">
+        <span>Groceries</span><span class="text-red-500">-$75</span>
+      </li>
+      <li class="bg-white p-3 rounded-lg shadow-sm flex justify-between">
+        <span>Salary</span><span class="text-green-500">+$1,500</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <nav class="mt-auto bg-white shadow-inner flex justify-around py-3 text-blue-600 text-sm">
+    <a href="home.html" class="font-semibold">Home</a>
+    <a href="transaction.html">Add</a>
+    <a href="budget.html">Budget</a>
+  </nav>
+</body>
+</html>

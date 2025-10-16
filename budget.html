@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Overview</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <header class="bg-blue-600 text-white text-center py-4 text-xl font-semibold">
+    Budget Overview
+  </header>
+
+  <main class="flex-grow px-6 py-6 space-y-4">
+    <div class="bg-white p-4 rounded-lg shadow flex justify-between">
+      <div>
+        <h3 class="text-gray-700 font-semibold">Food</h3>
+        <p class="text-sm text-gray-500">Spent $120 / $300</p>
+      </div>
+      <p class="text-green-600 font-bold">60% left</p>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg shadow flex justify-between">
+      <div>
+        <h3 class="text-gray-700 font-semibold">Transport</h3>
+        <p class="text-sm text-gray-500">Spent $40 / $150</p>
+      </div>
+      <p class="text-green-600 font-bold">73% left</p>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg shadow flex justify-between">
+      <div>
+        <h3 class="text-gray-700 font-semibold">Entertainment</h3>
+        <p class="text-sm text-gray-500">Spent $100 / $200</p>
+      </div>
+      <p class="text-green-600 font-bold">50% left</p>
+    </div>
+  </main>
+
+  <nav class="mt-auto bg-white shadow-inner flex justify-around py-3 text-blue-600 text-sm">
+    <a href="home.html">Home</a>
+    <a href="transaction.html">Add</a>
+    <a href="budget.html" class="font-semibold">Budget</a>
+  </nav>
+</body>
+</html>
