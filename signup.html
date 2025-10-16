@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SignupPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-neutral-900 text-slate-900">
+    <main class="min-h-screen grid place-items-center p-5">
+      <section
+        class="w-[420px] max-w-full rounded-xl shadow-2xl overflow-hidden"
+      >
+        <div
+          class="bg-gradient-to-b from-blue-600 to-sky-500 text-white px-7 pt-9 pb-20 relative"
+        >
+          <div
+            class="w-14 h-14 rounded-[16px] border border-white/30 bg-white/20 backdrop-blur grid place-items-center mb-4"
+          ></div>
+          <h1 class="text-2xl font-bold">Create your account</h1>
+          <p class="text-sm text-white/90">
+            Sign up to start managing your finances
+          </p>
+        </div>
+
+        <div class="-mt-9 bg-white rounded-t-xl px-5 pb-7 pt-5">
+          <form id="signupForm" class="space-y-4" novalidate>
+            <div>
+              <label
+                for="name"
+                class="block text-xs font-semibold text-slate-700 mb-2"
+                >Full Name</label
+              >
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-3 grid place-items-center text-slate-400 pointer-events-none"
+                >
+                </span>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Jane Doe"
+                  required
+                  class="w-full rounded-md bg-slate-100 pl-10 pr-3 py-3 text-sm outline-none ring-1 ring-transparent focus:ring-blue-300"
+                />
+              </div>
+              <p id="nameError" class="mt-1 text-xs text-rose-600 hidden">
+                Please enter your name.
+              </p>
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-xs font-semibold text-slate-700 mb-2"
+                >Email</label
+              >
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-3 grid place-items-center text-slate-400 pointer-events-none"
+                >
+                </span>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="example@example.com"
+                  required
+                  class="w-full rounded-md bg-slate-100 pl-10 pr-3 py-3 text-sm outline-none ring-1 ring-transparent focus:ring-blue-300"
+                />
+              </div>
+              <p id="emailError" class="mt-1 text-xs text-rose-600 hidden">
+                Please enter a valid email.
+              </p>
+            </div>
+
+            <div>
+              <label
+                for="password"
+                class="block text-xs font-semibold text-slate-700 mb-2"
+                >Password</label
+              >
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-3 grid place-items-center text-slate-400 pointer-events-none"
+                >
+                </span>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Create a password"
+                  minlength="8"
+                  required
+                  class="w-full rounded-md bg-slate-100 pl-10 pr-10 py-3 text-sm outline-none ring-1 ring-transparent focus:ring-blue-300"
+                />
+                <button
+                  type="button"
+                  id="togglePw"
+                  class="absolute inset-y-0 right-3 text-slate-500 hover:text-slate-700"
+                ></button>
+              </div>
+              <p class="mt-1 text-[11px] text-slate-500">
+                Use at least 8 characters, including a number and a letter.
+              </p>
+              <p id="passwordError" class="mt-1 text-xs text-rose-600 hidden">
+                Password must be at least 8 characters and include letters and
+                numbers.
+              </p>
+            </div>
+
+            <div>
+              <label
+                for="confirmPassword"
+                class="block text-xs font-semibold text-slate-700 mb-2"
+                >Confirm Password</label
+              >
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-3 grid place-items-center text-slate-400 pointer-events-none"
+                >
+                </span>
+                <input
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  type="password"
+                  placeholder="Re-enter your password"
+                  required
+                  class="w-full rounded-md bg-slate-100 pl-10 pr-3 py-3 text-sm outline-none ring-1 ring-transparent focus:ring-blue-300"
+                />
+              </div>
+              <p id="confirmError" class="mt-1 text-xs text-rose-600 hidden">
+                Passwords do not match.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-2 text-xs">
+              <input
+                id="terms"
+                type="checkbox"
+                class="mt-0.5 accent-blue-600"
+              />
+              <label for="terms" class="text-slate-600">
+                I agree to the
+                <a href="#" class="text-blue-600 hover:underline"
+                  >Terms of Service</a
+                >
+                and
+                <a href="#" class="text-blue-600 hover:underline"
+                  >Privacy Policy</a
+                >.
+              </label>
+            </div>
+            <p id="termsError" class="mt-1 text-xs text-rose-600 hidden">
+              You must accept the terms to continue.
+            </p>
+
+            <button
+              type="submit"
+              class="w-full rounded-md bg-neutral-900 text-white py-3 text-sm font-medium hover:opacity-95 active:opacity-90 transition flex items-center justify-center gap-1"
+            >
+              <span>Create Account</span>
+            </button>
+
+            <p class="text-xs text-center text-slate-500">
+              Already have an account?
+              <a href="#" class="text-blue-600 hover:underline">Sign in</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
